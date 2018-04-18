@@ -194,3 +194,4 @@ i32 kvga_cputs(const char *str, VgaTextAtrr bg, VgaTextAtrr fg) {
 
 接下来我给出`kvga_puts("hello world\n")`的测试结果
 
+![截图](https://github.com/iosmanthus/Osmanthus-tutorial/blob/master/etc/Screenshot%20from%202018-04-18%2011-39-42.png)
