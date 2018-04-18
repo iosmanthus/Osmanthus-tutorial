@@ -206,6 +206,55 @@ clean:
     └── link.ld
 ```
 
-现在键入`make debug -B && make run`你就可以看到屏幕上出现`hello world`了
+还有一个问题就是, `link.ld` 和 `grub.cfg`怎么来, 很简单, 我这里给出一个样本
+
+`link.ld`很重要 这个是给`ld`用的链接脚本, 他直接决定了我们内核在内存中的位置
+
+```
+ENTRY(__start)
+SECTIONS
+{
+PROVIDE( __kernel_begin_addr = . );
+.text :
+{
+  *(.text)
+  . = ALIGN(4096);
+}
+.data :
+{
+  *(.data)
+    *(.rodata)
+    . = ALIGN(4096);
+}
+.bss :
+{
+  *(.bss)
+  . = ALIGN(4096);
+}
+.stab :
+{
+  *(.stab)
+  . = ALIGN(4096);
+}
+.stabstr :
+{
+  *(.stabstr)
+  . = ALIGN(4096);
+}
+PROVIDE( __kernel_end_addr = . );
+
+/DISCARD/ : { *(.comment) *(.eh_frame) }
+}
+```
+
+接下来是`grub.cfg`这个是用来描述grub启动入口的
+
+```
+menuentry "os-name" {
+  multiboot /boot/kernel-name
+}
+```
+
+键入`make debug -B && make run`你就可以看到屏幕上出现`hello world`了
 
 ![截图](https://github.com/iosmanthus/Osmanthus-tutorial/blob/master/etc/Screenshot%20from%202018-04-18%2009-27-34.png)
