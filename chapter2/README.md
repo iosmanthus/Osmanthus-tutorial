@@ -208,4 +208,4 @@ clean:
 
 现在键入`make debug -B && make run`你就可以看到屏幕上出现`hello world`了
 
-[截图](https://github.com/iosmanthus/Osmanthus-tutorial/blob/master/etc/Screenshot%20from%202018-04-18%2009-27-34.png)
+![截图](https://github.com/iosmanthus/Osmanthus-tutorial/blob/master/etc/Screenshot%20from%202018-04-18%2009-27-34.png)
