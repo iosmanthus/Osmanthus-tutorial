@@ -59,6 +59,8 @@ c
 
 这时候你就可以看到
 
+![](https://github.com/iosmanthus/Osmanthus-tutorial/blob/master/etc/Screenshot%20from%202018-04-20%2009-33-54.png)
+
 之后我们就可以着手实现我们的格式化打印函数了.
 
 首先, 我们给出相关的函数原型.
@@ -445,3 +447,7 @@ void kmain(KMultiBoot *mb) {
   hlt();
 }
 ```
+
+最后的截图
+
+![](https://github.com/iosmanthus/Osmanthus-tutorial/blob/master/etc/Screenshot%20from%202018-04-21%2009-15-08.png)
