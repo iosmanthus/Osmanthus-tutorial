@@ -1,0 +1,5 @@
+%clang
+%c -std=c11
+-Wall
+-I/home/programmatore/Projects/Osmanthus-tutorial/chapter3/include
+
