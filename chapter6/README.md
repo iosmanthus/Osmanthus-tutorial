@@ -417,3 +417,5 @@ void kmain(KMultiBoot *mb) {
 ```
 
 如果这个时候可以看到不断有未捕捉中断的提示, 说明代码已经可以工作了.
+
+![](https://github.com/iosmanthus/Osmanthus-tutorial/blob/master/etc/Screenshot%20from%202018-04-22%2012-53-01.png)
