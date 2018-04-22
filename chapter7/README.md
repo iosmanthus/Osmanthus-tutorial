@@ -69,3 +69,4 @@ void kmain(KMultiBoot *mb) {
 
 运行结果:
 
+![](https://github.com/iosmanthus/Osmanthus-tutorial/blob/master/etc/Screenshot%20from%202018-04-22%2016-48-51.png)
